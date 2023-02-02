@@ -7,6 +7,13 @@ dirctory = "1024enc"
 server_ip = "192.168.1.62"
 
 
+
+# Average push time in the stream
+
+# The push_time_avg function takes an input of a list of times, called array.
+# The function calculates the average time between pushes by iterating through the list and adding up the differences between consecutive elements in the list.
+# The average is calculated by dividing the total time difference by the number of differences (i.e. the length of the list minus 1).
+# The function returns the calculated average, but if an error occurs during the division, the function returns nothing by using a try-except block.
 def push_time_avg(array):
     time = 0
     for i in range(len(array) - 1):
